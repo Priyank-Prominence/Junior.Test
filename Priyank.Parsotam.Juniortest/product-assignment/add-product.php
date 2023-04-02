@@ -63,11 +63,11 @@
                         </div>    
                         <div class="row align-items-center mt-3">
                             <div class="col-lg-3">
-                                <label for="productType">Type Swticher:</label>
+                                <label for="productType">Type Switcher:</label>
                             </div>
                             <div class="col-lg-6">
                                 <select id="productType" name="productType" class="form-control" required>
-                                    <option value="">Type Swticher</option>
+                                    <option value="">Type Switcher</option>
                                     <option value="DVD">DVD</option>
                                     <option value="Book">Book</option>
                                     <option value="Furniture">Furniture</option>

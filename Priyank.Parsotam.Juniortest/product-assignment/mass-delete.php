@@ -1,9 +1,9 @@
 <?php
-
 use App\Utils\Database;
 use App\Model\Product;
 
-require_once 'vendor/autoload.php';
+require_once 'src/Utils/Database.php';
+require_once 'src/Model/Product.php';
 
 header('Content-Type: application/json');
 

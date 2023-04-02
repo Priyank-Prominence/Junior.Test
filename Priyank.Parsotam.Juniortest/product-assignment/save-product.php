@@ -1,10 +1,10 @@
 <?php
-
-require_once __DIR__ . '/vendor/autoload.php';
-
 use App\Controller\ProductController;
 use App\Utils\Database;
 use App\Factory\ProductFactory;
+require_once 'src/Utils/Database.php';
+require_once 'src/Controller/ProductController.php';
+require_once 'src/Factory/ProductFactory.php';
 
 $productController = new ProductController();
 $db = Database::getConnection();

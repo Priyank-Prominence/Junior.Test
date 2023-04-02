@@ -1,12 +1,15 @@
 <?php
-
 namespace App\Factory;
+require_once 'src/Model/ProductTypes/DVD.php';
+require_once 'src/Model/ProductTypes/Book.php';
+require_once 'src/Model/ProductTypes/Furniture.php';
+
 
 use App\Model\ProductTypes\DVD;
 use App\Model\ProductTypes\Book;
 use App\Model\ProductTypes\Furniture;
 
-// ...
+
 
 class ProductFactory
 {

@@ -1,9 +1,10 @@
 <?php
-
-require_once __DIR__ . '/vendor/autoload.php';
-
 use App\Model\Product;
 use App\Utils\Database;
+require_once 'src/Utils/Database.php';
+require_once 'src/Model/Product.php';
+
+
 
 $db = new Database();
 $products = Product::getAllProducts($db);
