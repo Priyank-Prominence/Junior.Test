@@ -1,9 +1,6 @@
 <?php
+
 namespace App\Controller;
-require_once 'src/Utils/Database.php';
-require_once 'src/Factory/ProductFactory.php';
-
-
 
 use App\Factory\ProductFactory;
 use App\Utils\Database;

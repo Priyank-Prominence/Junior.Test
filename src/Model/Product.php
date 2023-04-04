@@ -1,8 +1,6 @@
 <?php
+
 namespace App\Model;
-
-require_once 'src/Utils/Database.php';
-
 
 use App\Utils\Database;
 

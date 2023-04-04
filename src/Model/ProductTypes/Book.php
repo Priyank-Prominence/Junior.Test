@@ -1,7 +1,6 @@
 <?php
-namespace App\Model\ProductTypes;
-require_once 'src/Model/Product.php';
 
+namespace App\Model\ProductTypes;
 
 use App\Model\Product;
 
