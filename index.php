@@ -1,9 +1,10 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-
 use App\Model\Product;
 use App\Utils\Database;
+
+
 
 $db = new Database();
 $products = Product::getAllProducts($db);
@@ -46,7 +47,7 @@ $products = Product::getAllProducts($db);
                           <p><?php echo $product['sku'];  ?></p>
                           <p><?php echo $product['name'];  ?></p>
                           <p><?php echo $product['price'];  ?></p>
-                          <p><?php echo $product['productTypeLabels'][$product['productType']].$product['specificAttribute'];  ?></p>
+                          <p><?php echo $product['productTypeLabels'][$product['productType']]."<br><br>".$product['specificAttribute'];  ?></p>
                         </div>
                     </div>
                

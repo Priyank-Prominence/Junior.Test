@@ -1,12 +1,12 @@
 <?php
-
 namespace App\Factory;
-
-use App\Model\ProductTypes\DVD;
-use App\Model\ProductTypes\Book;
-use App\Model\ProductTypes\Furniture;
+require_once 'src/Model/Product.php';
+require_once 'src/Model/ProductType.php';
 
 
+use App\Model\ProductType;
+
+// ...
 
 class ProductFactory
 {
@@ -19,15 +19,10 @@ class ProductFactory
             'Book'=> $data['weight']."KG",
             'Furniture'=> $data['height']."X".$data['width']."X".$data['height']
         ];
-        $productTypeClassMapping = [
-            'DVD' => DVD::class,
-            'Book' => Book::class,
-            'Furniture' => Furniture::class,
-        ];
 
-        if (isset($productTypeClassMapping[$productType])) {
-            $class = $productTypeClassMapping[$productType];
-            $product = new $class($data['sku'], $data['name'], $data['price'], $productTypeMapping[$productType]);
+        if (isset($productTypeMapping[$productType])) {
+            $specificAttribute = $productTypeMapping[$productType];
+            $product = new ProductType($data['sku'], $data['name'], $data['price'],$productType, $specificAttribute);
         }
 
         return $product;

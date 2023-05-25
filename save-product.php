@@ -6,6 +6,7 @@ use App\Controller\ProductController;
 use App\Utils\Database;
 use App\Factory\ProductFactory;
 
+
 $productController = new ProductController();
 $db = Database::getConnection();
 
